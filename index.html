@@ -6,83 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon MacLean's Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 
 <body>
     <header class="banner">
         <h1>Simon MacLean</h1>
         <div class="contact-info">
-            <a href="mailto:sjd@oneape.xyz">sjd@oneape.xyz</a> |
-            <a href="tel:+12064724637">+1 206-472-4637</a> |
-            <a href="https://www.linkedin.com/in/simonmaclean">LinkedIn</a>
+            <!-- Using icons for a better look -->
+            <a href="mailto:sjd@oneape.xyz"><i class="fas fa-envelope"></i> sjd@oneape.xyz</a> |
+            <a href="tel:+12064724637"><i class="fas fa-phone"></i> +1 206-472-4637</a> |
+            <a href="https://www.linkedin.com/in/simonmaclean"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
     </header>
 
     <main>
-        <!-- GitHub Projects -->
-        <section id="github-projects">
-            <h2>Projects</h2>
-            <div id="project-list">
-                <!-- Filled by JS -->
-            </div>
-        </section>
 
         <!-- Education -->
         <section class="education">
             <h2>Education</h2>
-            <p>Santa Clara University, 2022-Present, GPA 3.6</p>
+            <p>Santa Clara University, 2022-Present</p>
+            <span class="gpa">GPA: 3.6</span>
         </section>
 
         <!-- Skills -->
         <section class="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>C#</li>
-                <li>Dart</li>
-                <li>CUDA</li>
-                <li>Unreal Engine</li>
-                <li>Unity</li>
-                <li>Flutter</li>
-                <li>AWS Lambda</li>
+            <ul class="skill-list">
+                <!-- Skill icons could make it more visually appealing -->
+                <li><i class="fas fa-code"></i> C#</li>
+                <li><i class="fas fa-mobile"></i> Dart</li>
+                <li><i class="fas fa-microchip"></i> CUDA</li>
+                <li><i class="fas fa-gamepad"></i> Unreal Engine</li>
+                <li><i class="fas fa-cube"></i> Unity</li>
+                <li><i class="fas fa-mobile-alt"></i> Flutter</li>
+                <li><i class="fas fa-cloud"></i> AWS Lambda</li>
             </ul>
         </section>
 
-        <!-- Experience -->
-        <section class="experience">
-            <h2>Experience</h2>
-            <article>
-                <h3>Herculia</h3>
-                <p>Co-founder & Lead Developer</p>
-                <ul>
-                    <li>Developed a VR video calling app.</li>
-                    <li>Available on the App Store and Google Play.</li>
-                </ul>
-            </article>
-            <article>
-                <h3>TheBlock</h3>
-                <p>Co-founder & Lead Developer</p>
-                <ul>
-                    <li>Built a scheduling and monetization platform.</li>
-                    <li>Utilized Flutter and AWS for backend.</li>
-                </ul>
-            </article>
-        </section>
+		<!-- Experience -->
+		<section class="experience">
+			<h2>Experience</h2>
+			<article>
+				<h3>Herculia</h3>
+				<!-- Separate link below title -->
+				<a href="https://herculia.ai" class="subdued-link" target="_blank" rel="noopener noreferrer">Visit Website</a>
+				<p>Co-founder & Lead Developer</p>
+				<ul>
+					<li><i class="fas fa-vr-cardboard"></i> Developed a VR video calling app.</li>
+					<li><i class="fas fa-store"></i> Available on the <a href="https://apps.apple.com/us/app/herculia/id6447842643" class="subdued-link" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.ONEAPE.Herculia" class="subdued-link" target="_blank" rel="noopener noreferrer">Google Play</a>.</li>
+				</ul>
+			</article>
+			<article>
+				<h3>TheBlock</h3>
+				<p>Co-founder & Lead Developer</p>
+				<ul>
+					<li><i class="fas fa-calendar-alt"></i> Built a scheduling and monetization platform.</li>
+					<li><i class="fas fa-server"></i> Utilized Flutter and AWS for backend.</li>
+				</ul>
+			</article>
+		</section>
 
         <!-- Leadership -->
         <section class="leadership">
             <h2>Leadership</h2>
             <ul>
-                <li>Managed a small team of developers in various projects.</li>
-                <li>Directed development workflows.</li>
+                <li><i class="fas fa-users"></i> Managed a small team of developers in various projects.</li>
+                <li><i class="fas fa-chart-line"></i> Directed development workflows.</li>
             </ul>
         </section>
-
+		<!-- GitHub Projects -->
+        <section id="github-projects">
+            <h2>Projects</h2>
+            <ul id="project-list">
+                <!-- Filled by JS -->
+            </ul>
+        </section>
         <!-- Footer -->
         <section class="footer">
-            <a href="https://github.com/SimonMacLean">GitHub</a>
+            <a href="https://github.com/SimonMacLean"><i class="fab fa-github"></i> GitHub</a>
         </section>
     </main>
 
+    <!-- Included FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="main.js"></script>
 </body>
 

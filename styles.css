@@ -1,45 +1,99 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    font-family: 'Inter', sans-serif; /* Changed font to Inter */
+    background-color: #F4F4F8;
+    line-height: 1.6;
     color: #333;
 }
-
+main {
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+/* Header Styles */
 .banner {
-    background-color: #8080FF;
-    color: white;
+    background-color: #0A1931;
+    color: #ffffff;
     text-align: center;
-    padding: 1em;
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info a {
-    margin: 0 5px;
+    margin: 0 10px;
     color: white;
     text-decoration: none;
+    font-size: 0.9em;
 }
 
-/* Style GitHub projects */
+.contact-info a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Main Content */
+.content {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Section Headers */
+h2 {
+    border-bottom: 2px solid #4E89AE;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
 #github-projects {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.project-card {
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin: 1em;
-    max-width: calc(33% - 2em);
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #0A1931;
+    color: white;
 }
 
-.project-card h3 {
-    margin: 0;
-}
-
-/* Mobile-friendly tweaks */
+/* Media Query */
 @media (max-width: 768px) {
-    .project-card {
-        max-width: calc(50% - 2em);
+    .content {
+        margin: 10px;
+        padding: 10px;
     }
+}
+
+h3 {
+    margin-top: 0;
+    font-weight: 700; 
+}
+.subdued-link {
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    color: #4E89AE;
+    font-size: 0.9em;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.subdued-link:hover {
+    border-bottom: 1px solid #4E89AE;
 }
